@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gado_app/aboutUSPage.dart';
 import 'package:gado_app/homePage.dart';
 
-class CustumDrawer extends StatelessWidget {
-  const CustumDrawer({
+class CustomDrawer extends StatelessWidget {
+  const CustomDrawer({
     Key key,
   }) : super(key: key);
 

@@ -14,7 +14,7 @@ class _AboutUSPageState extends State<AboutUSPage> {
       backgroundColor: mainBluColor,
 
       appBar: AppBar(),
-      drawer: CustumDrawer(),
+      drawer: CustomDrawer(),
     );
   }
 }
