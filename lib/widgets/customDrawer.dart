@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:gado_app/aboutUSPage.dart';
+import 'package:gado_app/postsPage.dart';
 import 'package:gado_app/homePage.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -12,7 +12,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(40.0),
         child: ListView(
           children: [
             InkWell(
@@ -24,15 +24,18 @@ class CustomDrawer extends StatelessWidget {
                 SizedBox(width: 5,),
                 Text("Home")
               ],),
-            ),InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUSPage()));
-              },
-              child: Row (children: [
-                Icon(Icons.inbox_rounded),
-                SizedBox(width: 5,),
-                Text("About Us")
-              ],),
+            ),Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PostsPage()));
+                },
+                child: Row (children: [
+                  Icon(Icons.book_rounded),
+                  SizedBox(width: 5,),
+                  Text("Posts")
+                ],),
+              ),
             ),
           ],
         ),

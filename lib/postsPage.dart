@@ -4,12 +4,12 @@ import 'package:gado_app/api/postModel.dart';
 import 'package:gado_app/constant.dart';
 import 'package:gado_app/widgets/customDrawer.dart';
 
-class AboutUSPage extends StatefulWidget {
+class PostsPage extends StatefulWidget {
   @override
-  _AboutUSPageState createState() => _AboutUSPageState();
+  _PostsPageState createState() => _PostsPageState();
 }
 
-class _AboutUSPageState extends State<AboutUSPage> {
+class _PostsPageState extends State<PostsPage> {
   bool isLoading = true;
   FetchData fetchData = FetchData();
   List <PostModel>postList = [];
