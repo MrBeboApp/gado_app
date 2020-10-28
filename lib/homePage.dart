@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gado_app/api/fetchData.dart';
 import 'package:gado_app/constant.dart';
 import 'package:gado_app/detealsPage.dart';
 import 'package:gado_app/widgets/cardWidget.dart';
@@ -11,6 +12,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  FetchData fetchData = FetchData();
+
+  @override
+  void initState() {
+
+    fetchData.fetchPosts();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
